@@ -13,14 +13,14 @@ const LeftSection = ({ isSideBarVisible }: Props) => {
   return (
     <>
       <section
-        className={`box-content h-[calc(100vh-40px)] bg-green-100 w-72 max-w-xs absolute px-4 mt-auto transition-all md:static md:bg-green-600/10 dark:bg-zinc-700 ${
+        className={`box-content h-[calc(100vh-40px)] bg-green-100 w-72 max-w-xs absolute mt-auto transition-all md:static md:bg-green-600/10 dark:bg-zinc-700 ${
           isSideBarVisible
             ? "left-0 z-10 md:w-[30%] "
             : "-left-full md:w-0 md:p-0 md:overflow-hidden 2xl:w-[30%] 2xl:px-4"
         }`}
       >
         <Profile />
-        <div className="pt-20">
+        <div className="pt-20 px-4">
           <Navigations />
           <TaskDonut />
         </div>

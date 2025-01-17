@@ -53,7 +53,7 @@ const RightSection = ({ isRightSectionVisible }: Props) => {
 
   return (
     <div
-      className={`h-[calc(100vh-40px)] w-96 bg-green-100 flex flex-col justify-between absolute transition-all md:static dark:bg-zinc-700 dark:text-white ${
+      className={`h-[calc(100vh-40px)] w-96 bg-green-100 flex flex-col justify-between absolute transition-all md:static md:bg-green-600/10 dark:bg-zinc-700 dark:text-white ${
         isRightSectionVisible
           ? "right-0 z-10 md:w-[30%]"
           : "-right-full -z-10 md:w-0 md:p-0 md:overflow-hidden 2xl:w-[30%]"

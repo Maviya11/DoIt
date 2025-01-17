@@ -1,9 +1,9 @@
+import { useEffect, useState } from "react";
 import { IoReorderThreeOutline, IoSearchOutline } from "react-icons/io5";
 import { PiSquaresFour } from "react-icons/pi";
 import { TbMoonStars } from "react-icons/tb";
 import { FiSun } from "react-icons/fi";
 import logo from "../../assets/logo.webp";
-import { useEffect, useState } from "react";
 
 interface Props {
   onClick: () => void;
@@ -23,7 +23,7 @@ const Navbar = ({ onClick }: Props) => {
   }, []);
 
   return (
-    <header className="px-2 py-1 mb-3 flex justify-between mx-auto sm:px-6 md:py-2 dark:shadow-lg">
+    <header className="px-2 py-1 mb-3 flex justify-between mx-auto sm:px-6 md:py-2 shadow-lg">
       <div className="flex items-center">
         <IoReorderThreeOutline
           size={30}
