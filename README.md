@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+Features:-
+Task Management: Add, edit, and delete tasks with ease.
+Task Prioritization: Mark tasks as important or completed.
+Category Organization: Organize tasks into categories for better management.
+Persistence: User tasks are stored in Firebase for real-time synchronization and accessibility.
+Responsive Design: Fully optimized for desktop and mobile devices.
+Interactive UI: Provides visual feedback for user actions (e.g., completed tasks marked green).
+--------------------------------------------------------------------------------------------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technology Stack:-
+Frontend: React, TypeScript, Tailwind CSS
+Additional Libraries:-
+react-icons for visual icons
+axios for API calls
+-------------------------------------------------------------------------------------------------
 
-Currently, two official plugins are available:
+Getting Started:-
+Prerequisites:-
+Node.js (v14 or above)
+npm or yarn package manager
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation:-
+Clone the repo:
+git clone https://github.com/your-username/todo-list-app.git
+cd todo-list-app
 
-## Expanding the ESLint configuration
+Install dependencies:-
+npm install
+# or
+yarn install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Setup .env:-
+1-Go to the Gemini AI Studio
+2-Create an account
+3-Get an API key
+4-Create a .env file & Paste -> REACT_APP_API_KEY=your-api-key // Replace with your own API key
 
-- Configure the top-level `parserOptions` property like this:
+Running the project:-
+Open the terminal and type -> npm run dev
+Follow the link generated
+--------------------------------------------------------------------------------------------------
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Usage:-
+Adding a Task: Use the input field and "Add" button to create a new task.
+Marking Complete: Click the checkbox next to a task to mark it as complete. Completed tasks are visually distinguished.
+Deleting Tasks: Use the delete icon to remove a task permanently.
+Sorting Tasks:-
+Incomplete tasks are listed at the top.
+Completed tasks are displayed at the bottom.
